@@ -1,9 +1,10 @@
 // ShoppingCart.js
 import React from 'react';
+import './shoppingCart.css'; // Import the CSS file
 
 const ShoppingCart = ({ cart, onRemoveItem }) => {
   return (
-    <div>
+    <div className="shopping-cart">
       <h2>Keranjang Belanja</h2>
       <ul>
         {cart.map(item => (

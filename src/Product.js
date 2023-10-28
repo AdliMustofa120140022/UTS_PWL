@@ -1,13 +1,15 @@
 // Product.js
 import React from 'react';
+import './product.css'; // Import the CSS file
 
 const Product = ({ product, onDelete, onBuy }) => {
   return (
-    <li>
-      {product.name} - Harga: ${product.price} - Stok: {product.stock}
+    <div className="product">
+      <h3>{product.name}</h3>
+      <p>Harga: Rp. {product.price} - Stok: {product.stock}</p>
       <button onClick={onDelete}>Hapus</button>
-      <button onClick={onBuy}>Beli</button>
-    </li>
+      <button onClick={onBuy} className="buy">Beli</button>
+    </div>
   );
 };
 

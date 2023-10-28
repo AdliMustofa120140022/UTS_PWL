@@ -1,5 +1,6 @@
 // ProductForm.js
 import React, { useState } from 'react';
+import './productForm.css'; // Import the CSS file
 
 const ProductForm = ({ onSubmit }) => {
   const [productName, setProductName] = useState('');
@@ -21,30 +22,34 @@ const ProductForm = ({ onSubmit }) => {
   };
 
   return (
-    <div>
+    <div className="product-form">
+      <h2>UTS PWL - ADLI MUSTOFA (120140022)</h2>  
       <h2>Formulir Produk</h2>
       <form onSubmit={handleSubmit}>
-        <label>Nama Produk:
+        <div className="form-group">
+          <label>Nama Produk:</label>
           <input
             type="text"
             value={productName}
             onChange={(e) => setProductName(e.target.value)}
           />
-        </label>
-        <label>Harga:
+        </div>
+        <div className="form-group">
+          <label>Harga:</label>
           <input
             type="number"
             value={productPrice}
             onChange={(e) => setProductPrice(e.target.value)}
           />
-        </label>
-        <label>Stok:
+        </div>
+        <div className="form-group">
+          <label>Stok:</label>
           <input
             type="number"
             value={productStock}
             onChange={(e) => setProductStock(e.target.value)}
           />
-        </label>
+        </div>
         <button type="submit">Simpan</button>
       </form>
     </div>
