@@ -1,0 +1,29 @@
+/* productForm.css */
+.product-form {
+    margin-bottom: 20px;
+  }
+  
+  .product-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  
+  .product-form label {
+    margin-bottom: 10px;
+  }
+  
+  .product-form input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
